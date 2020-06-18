@@ -10,11 +10,11 @@
 header {
     background-image: url("../images/bg.jpg");
     background-size: cover;
-    padding-top: 350px;
+    position: relative;
+    padding-top: 120px;
     padding-bottom: 60px;
     color: white;
-    position: relative;
-    bottom: 250px;
+    box-shadow: inset 0 0 0 1000px rgba(0, 15, 153, 0.2);
 }
 
 nav ul {
@@ -52,5 +52,20 @@ header p {
     font-weight: 100;
 }
 
-/* Body */
+header p,
+header h1,
+header ul {
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.75);
+}
 
+/* Main Content */
+
+.main-content {
+    max-width: 75%;
+    margin: auto;
+}
+
+.page-description {
+    margin-top: 0;
+    padding: 0;
+}
