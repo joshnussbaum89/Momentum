@@ -101,13 +101,56 @@ h2 {
 .form-flex {
     display: flex;
     flex-direction: column;
-    max-width: 55%;
+    max-width: 100%;
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 75px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.30);
 }
 
 legend {
     margin: auto;
+
 }
 
 fieldset {
     border: none;
+}
+
+input[type="text"],
+input[type="email"] {
+  margin: 10px 0;
+  padding: 10px; 
+  border-radius: 5px;
+  color: rgb(82, 82, 82);
+  font-weight: 200;
+  width: 100%;
+  border: 1px solid rgb(82, 82, 82);
+  outline: none;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.30);
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: rgb(83, 36, 255);
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(0, 0, 0);
+    transition: .4s;
+    color: yellow;
+}
+
+input[type="submit"]:active {
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.30);
+}
+
+label {
+    font-size: .85em;
 }
