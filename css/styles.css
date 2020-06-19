@@ -18,16 +18,24 @@ header {
     border-bottom: 4px solid rgba(194, 187, 206, 0.75);
 }
 
-nav ul {
+/* nav ul {
     display: inline-block;
     position: relative;
     bottom: 100px;
     left: 925px;
+} */
+
+/* -- Add this to media query ^^^ ??? -- */
+
+ul {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 2em;
 }
 
 li {
     list-style: none;
-    display: inline;
+    display: inline-block;
     padding: 0 10px;
     font-size: 1.2em;
     font-weight: 200;
@@ -70,7 +78,7 @@ main {
 }
 
 .page-description {
-    max-width: 55%;
+    max-width: 90%;
     margin: auto;
     line-height: 1.2em;
     letter-spacing: .01em;
@@ -93,6 +101,7 @@ main {
 h2 {
     font-weight: 300;
     font-size: 2em;
+    line-height: 1.2em;
     text-shadow: 1px 4px 6px rgba(0, 0, 0, 0.30);
 }
 
@@ -153,4 +162,28 @@ input[type="submit"]:active {
 
 label {
     font-size: .85em;
+}
+
+/* Media Query */
+
+@media (min-width: 768px) {
+    
+    .page-description {
+        max-width: 75%;
+    }
+}
+
+@media (min-width: 1024px) {
+    
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        bottom: 115px;
+        right: 15px;
+    }
+
+    .page-description {
+        max-width: 55%;
+    }
 }
