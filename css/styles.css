@@ -18,16 +18,7 @@ header {
     border-bottom: 4px solid rgba(194, 187, 206, 0.75);
 }
 
-/* nav ul {
-    display: inline-block;
-    position: relative;
-    bottom: 100px;
-    left: 925px;
-} */
-
-/* -- Add this to media query ^^^ ??? -- */
-
-ul {
+nav ul {
     display: flex;
     justify-content: center;
     padding: 0 0 2em;
@@ -57,7 +48,7 @@ h1 {
 
 header p {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 100;
 }
 
@@ -112,7 +103,7 @@ h2 {
     flex-direction: column;
     max-width: 100%;
     background-color: white;
-    padding: 30px;
+    padding: 60px;
     margin-bottom: 75px;
     border-radius: 10px;
     box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.30);
@@ -120,7 +111,6 @@ h2 {
 
 legend {
     margin: auto;
-
 }
 
 fieldset {
@@ -168,6 +158,10 @@ label {
 
 @media (min-width: 768px) {
     
+    header p {
+        font-size: 2rem;
+    }
+
     .page-description {
         max-width: 75%;
     }
@@ -175,7 +169,7 @@ label {
 
 @media (min-width: 1024px) {
     
-    ul {
+    nav ul {
         display: flex;
         justify-content: flex-end;
         position: relative;
@@ -186,4 +180,5 @@ label {
     .page-description {
         max-width: 55%;
     }
+
 }
