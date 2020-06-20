@@ -148,6 +148,7 @@ input[type="submit"] {
     color: white;
     background-color: rgb(83, 36, 255);
     transition-duration: .5s;
+    cursor: pointer;
 }
 
 input[type="submit"]:hover {
